@@ -19,11 +19,40 @@
       <button>Get Space Images</button>
     </div>
 
+    <!-- Fun space fact section -->
+    <div class="did-you-know">
+      <div class="fact-content">
+        <div class="fact-icon">💡</div>
+        <div class="fact-text-container">
+          <h2>Did You Know?</h2>
+          <p id="spaceFact"></p>
+        </div>
+      </div>
+    </div>
+
     <div id="gallery" class="gallery">
       <div class="placeholder">
         <div class="placeholder-icon">🔭</div>
         <p>Select a date range and click "Get Space Images" to explore the cosmos!</p>
       </div>
+    </div>
+  </div>
+
+  <!-- Modal window that opens when a gallery item is clicked -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <!-- Close button -->
+      <button class="modal-close">×</button>
+      
+      <!-- Image -->
+      <img id="modalImage" src="" alt="" class="modal-image" />
+      
+      <!-- Title and date -->
+      <h2 id="modalTitle"></h2>
+      <p id="modalDate" class="modal-date"></p>
+      
+      <!-- Explanation -->
+      <p id="modalExplanation" class="modal-explanation"></p>
     </div>
   </div>
 
